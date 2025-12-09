@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <center>
+        <h1 id="title">✨ملك الساحة ✨</h1>
+    </center>
+    </header>
+    <div class="container">
+        <h2 style="color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">إضافة اللاعبين </h2>
+
+        <div class="players-form">
+            <div class="player-input">
+                <h3 style="color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">اللاعب الاول</h3>
+                <input id="p1_name" type="text" placeholder="أسم اللاعب">
+                <input id="p1_age" type="number" placeholder="العمر">
+                <input id="p1_color" type="color">
+            </div>
+
+            <div class="player-input">
+                <h3 style="color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">اللاعب الثاني</h3>
+                <input id="p2_name" type="text" placeholder="أسم اللاعب">
+                <input id="p2_age" type="number" placeholder="العمر">
+                <input id="p2_color" type="color">
+            </div>
+        </div>
+
+        <button id="startBtn">بدء اللعبه </button>
+
+        <div id="gameArea" class="hidden">
+
+            <h2 id="turnText"></h2>
+
+            <div id="board" class="board"></div>
+
+            <div id="question-box" class="question-box">
+
+                <h3 id="question"></h3>
+                <button id="yesBtn">نعم</button>
+                <button id="noBtn">لا</button>
+            </div>
+
+            <h3 id="winner" class="winner"></h3>
+        </div>
+    </div>
+   
+    <script src="scripts.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>
